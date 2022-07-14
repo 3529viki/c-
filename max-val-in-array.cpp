@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+     int n;
+    cin>>n;
+    int arr[n];
+	
+    cin>>arr[0];
+	int largest = arr[0];
+
+	for (int i = 1; i <= n - 1; i++)
+	{
+        cin>>arr[i];
+
+		if (arr[i] > largest)
+		{
+			largest = arr[i];
+		}
+	}
+	cout<< largest << endl;
+
+	return 0;
+}
